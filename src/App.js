@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Teste React
-        </a>
-      </header>
-    </div>
-  );
+	const counter = 0;
+
+	function incrementCounter() {
+		alert('Hello')
+	}
+
+	return (
+		<>
+			<h1>Contator: 0</h1>
+			<button onClick={incrementCounter}>Incrementar</button>
+		</>
+	);
 }
 
 export default App;
